@@ -1,0 +1,498 @@
+/*Global*/
+
+html {
+    font-size: 62.5%;
+    /*Reset for REM's -62.5% = 10px de 16px*/
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Header*/
+
+.site-header {
+    background-color: #000000;
+    padding: 1rem 0 3rem 0;
+}
+
+.head-logo {
+    max-width: 15rem;
+}
+
+.cont-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+/*Footer*/
+
+.main-footer {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer img {
+    margin-top: 5rem;
+}
+
+/*Navs Menu*/
+
+.nave a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    padding: 0.2rem 0.9rem 0.2rem 0.9rem;
+    transition: 0.5s;
+    border-radius: 0.2rem;
+}
+
+.nave a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.nave a:last-of-type {
+    margin: 0rem;
+}
+
+/*Buttons*/
+
+.buttom {
+    text-decoration: none;
+    padding: 0.27rem 0.2rem;
+    text-align: center;
+    font-weight: 60;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: none;
+    border-radius: 0.6rem;
+    border: 0.2rem solid #ffffff;
+    max-height: 6rem;
+}
+
+.buttom:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.buttom-slide {
+    margin-right: 15rem;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.875rem;
+    z-index: 99;
+    border-radius: 0.6rem;
+    border: 0.2rem solid #000000;
+    outline: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 0.625rem;
+}
+
+#myBtn:hover {
+    background-color: #888888;
+}
+
+/*Index Body section 1*/
+
+.image-slide {
+    background-image: url(../img/background-home.jpg);
+    background-position: center;
+    height: 75rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-text {
+    color: white;
+    padding-top: 1rem;
+    padding-left: 20rem;
+}
+
+.slide-text h1 {
+    font-size: 15rem;
+    font-weight: bolder;
+}
+
+.slide-text h2 {
+    font-size: 5rem;
+}
+
+.slide-text p {
+    font-size: 2.5rem;
+}
+
+.slide-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-grid {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+}
+
+.grid-level {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+.grid-level div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.grid-level h2 {
+    font-size: 3.5rem;
+    text-shadow: 0.4rem 0.3rem 0.5rem rgba(0, 0, 0, 0.404);
+}
+
+.grid-level p {
+    max-width: 40rem;
+    text-shadow: 0.3125rem 0.1875rem 0.5rem rgba(0, 0, 0, 0.404);
+    font-size: 1.8rem;
+}
+
+.grid-level img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-left: 15%;
+    margin-top: 1rem;
+}
+
+#left-image {
+    margin-right: 15%;
+    margin-left: 0%;
+}
+
+/*Index Body Section 2*/
+
+.body-main-flex {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.columb-cont {
+    max-width: 25%;
+    color: #ffffff;
+    background-image: url(../img/background-home-colum.jpg);
+    background-position: start;
+    background-size: cover;
+    margin-right: 13%;
+    padding: 5% 5% 5% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.columb-cont p {
+    text-anchor: end;
+}
+
+/*Carrousel Image*/
+
+.slideshow-container {
+    max-width: auto;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -1.375rem;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    transition: 0.6s ease;
+    border-radius: 0 0.1875rem 0.1875rem 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 0.1875rem 0 0 0.1875rem;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: larger;
+    font-family: "Roboto", sans-serif;
+    padding: 0.5rem 0.75rem;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1rem;
+    margin: 0 0.125rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*Marks*/
+
+.titleMarks {
+    font-size: 3.125rem;
+    margin: 0.9375rem;
+    display: flex;
+    justify-content: center;
+}
+
+.marks ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.marks ul li img {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.marks ul li img:hover {
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+/*Login Page*/
+
+.log-cont {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.log-cont-box {
+    margin-top: 13vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.cont {
+    width: 35%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: #8c9cac;
+    color: #ffff;
+    padding: 3rem 4rem 7rem 4rem;
+    margin-bottom: 18rem;
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 8rem;
+}
+
+.sec1 img {
+    width: 20rem;
+    height: auto;
+}
+
+.form-boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont label {
+    margin: 0rem;
+    padding: 0rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+.cont input {
+    width: 98%;
+    margin-bottom: 2rem;
+}
+
+.cont input[type="text"], .cont input[type="password"], .cont input[type="email"], .cont textarea[type="mensaje"] {
+    border: none;
+    border-bottom: 0.1rem solid #ffff;
+    background: transparent;
+    outline: none;
+    height: 4rem;
+    color: #ffff;
+    font-size: 1.6rem;
+}
+
+.cont input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 4rem;
+    background-color: rgb(40, 103, 185);
+    color: #ffff;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+
+.cont input[type="submit"]:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.cont a {
+    display: flex;
+    vertical-align: bottom;
+    text-decoration: none;
+    line-height: 2rem;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.cont a::after {
+    content: "";
+    display: block;
+    width: 6rem;
+    height: 0.5rem;
+    background-color: rgb(40, 103, 185);
+    margin: 0.7rem 0 0 0.3rem;
+}
+
+.cont a:hover {
+    color: rgb(40, 103, 185);
+}
+
+.cont h2 {
+    color: rgb(40, 103, 185);
+    text-align: center;
+}
+
+/*Register Page*/
+
+.center-reg {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+}
+
+.reg-colum-conts {
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+}
+
+.left-cont {
+    padding-right: 2rem;
+}
+
+.rigth-cont {
+    padding-left: 2rem;
+}
